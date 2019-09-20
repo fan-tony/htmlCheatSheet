@@ -23,7 +23,7 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, <a href="http://google.com" target="_blank">sed do eiusmod</a>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, <a href="http://google.com" target="_blank">sed do eiusmod</a><!-- blank makes the link open in a new tab -->
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -56,9 +56,56 @@
 				</tr>
 			</thead>
 			<tbody>
-				
+				<tr>
+					<td>Tony Fan</td>
+					<td>tony@something.com</td>
+					<td>19</td>
+				</tr>
+				<tr>
+					<td>John Doe</td>
+					<td>john@sdklf.com</td>
+					<td>45</td>
+				</tr>
+				<tr>
+					<td>Jane Doe</td>
+					<td>jane@sympatico.ca</td>
+					<td>73</td>
+				</tr>
 			</tbody>
 		</table>
 
+
+		<br>
+		<hr><!-- separates with a line -->
+		<br><!-- separates with a line break -->
+		<!-- forms -->
+		<form action="process.php" method="POST"> <!-- post means data is being pushed forward to server, process is just a pretend name used for servers? -->
+			<div>
+				<label>First Name</label><!-- labels are inline elements, so use a div container to make a block level and separate -->
+				<input type="text" name="firstName"><!--name value is how the server grabs this info -->
+			</div>
+			<br>
+			<div>
+				<label>Last Name</label>
+				<input type="text" name="lastName">
+			</div>
+			<br>
+			<div>
+				<label>Email</label>
+				<input type="email" name="email"><!--email checks for valididty, so it will only take valid email addresses -->
+			</div>
+			<br>
+			<div>
+				<label>Message</label>
+				<textarea name ="Message"></textarea>
+			</div>
+			<br>
+			<div>
+				<label>Last Name</label>
+				<input type="text" name="lastName">
+			</div>
+		</form>
+
+		<div style = "margin-top: 500px"></div>
 	</body>
 </html>
